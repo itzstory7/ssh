@@ -28,6 +28,7 @@ iptables -I INPUT -s 89.163.132.56 -j ACCEPT
 iptables -I INPUT -s 217.17.187.41 -j ACCEPT
 iptables -I INPUT -s 62.141.38.170 -j ACCEPT
 iptables -I INPUT -s 185.222.00.00/9 -j ACCEPT
+iptables -I INPUT -s 217.79.187.41 -j ACCEPT
 iptables -I INPUT -p udp -m udp --dport 27015:27030 -j ACCEPT
 iptables-save
 service sshd restart
